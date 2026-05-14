@@ -3,9 +3,11 @@
 name: CI_renamed
 
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    types: [ opened, synchronize, reopened, closed ]
 
   workflow_dispatch:
     inputs:
