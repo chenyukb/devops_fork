@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI_renamed
+name: CI_renamed_fork
 
 on:
   push:
@@ -27,4 +27,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test_shell
-        run: echo "The tags are ${{ inputs.tags }}"
+        run: echo "Fork..The tags are ${{ inputs.tags }}"
